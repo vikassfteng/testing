@@ -19,3 +19,12 @@ btnPopup.addEventListener('click', ()=> {
 iconClose.addEventListener('click', ()=> {
     wrapper.classList.remove('active-popup');
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleButton = document.querySelector('.dropdown-toggle');
+    var menu = document.querySelector('.dropdown-menu');
+  
+    toggleButton.addEventListener('click', function() {
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    });
+  });
+  
